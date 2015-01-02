@@ -1,0 +1,14 @@
+#!/bin/sh
+
+sxhkd -c ~/.sxhkdrc >/dev/null 2>&1 &
+
+feh --bg-fill ~/Pictures/4kwall.jpg &
+
+xrdb -load ~/.Xresources
+
+xset +fp ~/.fonts
+xset +fp /usr/share/fonts/jmk
+
+swm &
+
+exec urxvt

@@ -8,6 +8,6 @@ For weechat 1.1 rc-1
 * buffers.pl
 * iset.pl
 * go.py
-* grep.pu
+* grep.py
 * screen_away.py
 * urlserver.py

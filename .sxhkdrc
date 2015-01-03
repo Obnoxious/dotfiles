@@ -13,6 +13,20 @@ super + Tab
 super + Escape
 	kill -USR1 -x sxhkd
 
+# change brightness
+
+XF86MonBrightnessUp
+	xbacklight -inc 10
+XF86MonBrightnessDown
+	xbacklight -dec 10
+
+# Change volume
+
+XF86AudioRaiseVolume
+	amixer set Master 5%+ unmute
+XF86AudioLowerVolume
+	amixer set Master 5%- unmute
+
 # to resize firefox to a divisible number
 super + shift + r
 	wtp `wattr xy $(pfw)` 880 780 `pfw`
